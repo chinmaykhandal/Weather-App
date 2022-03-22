@@ -8,7 +8,7 @@ const WeatherApp = () => {
     const [search, setSearch] = useState("Please enter the city name");
 
     const fetchApi = async (city_name) => {
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=a6454549915398c25d1e63ce329debc0`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=a6454549915398c25d1e63ce329debc0`;
         const response = await fetch(url);
         const resJson = await response.json();
         //let main = JSON.parse(resJson);
