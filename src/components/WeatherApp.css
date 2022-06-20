@@ -1,9 +1,7 @@
 .box{
     display: block;
-    background-color: lightgrey;
     width: 300px;
     height: 400px;
-    border: 1px solid black;
     padding: 50px;
     margin: 20px;
     margin-left: auto;
@@ -11,7 +9,7 @@
 }
 
 .submitBtn{
-    background-color: #4CAF50; /* Green */
+    background-color: #2c169b; /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -19,6 +17,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin-top: 20px;
 }
 
 .inputField{

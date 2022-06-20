@@ -16,7 +16,7 @@ const WeatherApp = () => {
         let temp_num = ((resJson['main']['temp']-273.15)).toFixed(2);
         let temp_min_num = (resJson['main']['temp_min']-273.15).toFixed(2);
         let temp_max_num = (resJson['main']['temp_max']-273.15).toFixed(2);
-        setCity({temp: temp_num, min:temp_min_num , max: temp_max_num});  
+        setCity({temp: temp_num, min:temp_min_num , max: temp_max_num, weather: resJson['weather']['0']['main']});  
     }
 
     const getWeather = () => {
@@ -43,6 +43,7 @@ const WeatherApp = () => {
                 {city.temp}°Cel
                 </h1>
                 <h3 className="tempMinMax">Min : {city.min}°Cel | Max : {city.max}°Cel</h3>
+                <h3>{city.weather}</h3>
             </div>  
                
         </div>
